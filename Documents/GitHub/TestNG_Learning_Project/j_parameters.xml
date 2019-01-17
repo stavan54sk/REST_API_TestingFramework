@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+<parameter name="Third" value="Suite Level Third"/>
+<parameter name="Fourth" value="Suite Level Fourth"/>
+	<test thread-count="5" name="Test">
+	<parameter name="Single" value="Test Level Single"/>
+	<parameter name="DDouble" value="Test Level Double"/>
+	<parameter name="Third" value="Test Level Third"/>
+		<classes>
+			<class name="j_parameter.J_Parameter" />
+		</classes>
+	</test>
+
+</suite> <!-- Suite -->
+
+

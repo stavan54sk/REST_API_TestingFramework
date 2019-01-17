@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+	<test thread-count="5" name="Test1">
+		<classes>
+			<class
+				name="c_Exclude_Include_Methods.C_Exclude_Include_Methods">
+				<methods>
+					<include name="aSecondTest"/>
+				</methods>
+			</class>
+			<class
+				name="c_Exclude_Include_Methods.C_Exclude_Include_Methods2">
+				<methods>
+					<exclude name="bFirstTest"/>
+					<exclude name="bSecondTest"/>
+				</methods>
+			</class>
+
+
+		</classes>
+	</test> <!-- Test -->
+</suite> <!-- Suite -->

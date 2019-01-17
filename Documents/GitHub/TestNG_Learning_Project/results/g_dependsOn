@@ -1,0 +1,16 @@
+[RemoteTestNG] detected TestNG version 6.11.0
+FifthTest
+Smoke
+FourthTest
+dependsOnGroups Smoke
+SixthTest,dependsOnMethods FifthTest
+SeventhTest,dependsOnMethods SixthTest
+dependsOnGroups Smoke,Sanity
+EighthTest,dependsOnMethods SeventhTest
+NinthTest,dependsOnMethods EighthTest
+
+===============================================
+Suite
+Total tests run: 9, Failures: 0, Skips: 0
+===============================================
+

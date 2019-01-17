@@ -1,0 +1,19 @@
+[RemoteTestNG] detected TestNG version 6.11.0
+A Sanity,Smoke EighthTest
+A Sanity FifthTest
+A Sanity FourthTest
+A Sanity,Smoke NinthTest
+A Sanity,Smoke SeventhTest
+A Sanity SixthTest
+A Sanity,Smoke EighthTest
+A Smoke FirstTest
+A Sanity,Smoke NinthTest
+A Smoke SecondTest
+A Sanity,Smoke SeventhTest
+A Smoke ThirdTest
+
+===============================================
+Suite
+Total tests run: 12, Failures: 0, Skips: 0
+===============================================
+

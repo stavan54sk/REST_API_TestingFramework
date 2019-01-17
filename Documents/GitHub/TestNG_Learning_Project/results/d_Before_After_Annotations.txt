@@ -1,0 +1,39 @@
+[RemoteTestNG] detected TestNG version 6.11.0
+A @BeforeSuite Test Case
+B @BeforeSuite Test Case
+A @BeforeTest Test Case
+B @BeforeTest Test Case
+A @BeforeClass Test Case
+A @BeforeMethod Test Case
+A  Test Case
+A @AfterMethod Test Case
+A @AfterClass Test Case
+B @BeforeClass Test Case
+B @BeforeMethod Test Case
+B  Test Case
+B @AfterMethod Test Case
+B @AfterClass Test Case
+A @AfterTest Test Case
+B @AfterTest Test Case
+A @BeforeTest Test Case
+B @BeforeTest Test Case
+A @BeforeClass Test Case
+A @BeforeMethod Test Case
+A  Test Case
+A @AfterMethod Test Case
+A @AfterClass Test Case
+B @BeforeClass Test Case
+B @BeforeMethod Test Case
+B  Test Case
+B @AfterMethod Test Case
+B @AfterClass Test Case
+A @AfterTest Test Case
+B @AfterTest Test Case
+A @AfterSuite Test Case
+B @AfterSuite Test Case
+
+===============================================
+Suite
+Total tests run: 4, Failures: 0, Skips: 0
+===============================================
+

@@ -1,0 +1,13 @@
+[RemoteTestNG] detected TestNG version 6.11.0
+A First Test Case
+A Second Test Case
+A Third Test Case
+B First Test Case
+B Second Test Case
+B Third Test Case
+
+===============================================
+Suite
+Total tests run: 6, Failures: 0, Skips: 0
+===============================================
+

@@ -1,0 +1,11 @@
+[RemoteTestNG] detected TestNG version 6.11.0
+Second Test
+Test Failed Test Name SecondTest
+First Test
+Test Passed Test Name firstTest
+
+===============================================
+Suite
+Total tests run: 2, Failures: 1, Skips: 0
+===============================================
+
