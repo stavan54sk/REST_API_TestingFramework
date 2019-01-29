@@ -16,19 +16,35 @@ public class Testbase {
 	
 	
 	public Response createCustomer(String body) {
-		
 		System.out.println(body);
-		System.out.println(RestApis.baseUri+RestApis.createEmployee);
+		System.out.println(RestApis.baseUri+RestApis.createEmployeeEndpoint);
 		return  given().
 			contentType(ContentType.JSON).
 			body(body).
 		when().
-			post(RestApis.baseUri+RestApis.createEmployee).
+			post(RestApis.baseUri+RestApis.createEmployeeEndpoint).
 		then().
 			assertThat().statusCode(200).and().
 			assertThat().header("content-type", equalTo("text/html; charset=UTF-8")).
 		extract().
 			response();
-
+		
 	}
+	
+	
+	
+	public Response updateCustomer(String body,String UpdatingEmployee) {
+		return  given().
+			contentType(ContentType.JSON).
+			body(body).
+		when().
+			put(RestApis.baseUri+RestApis.updateEmployeeEndpoint+UpdatingEmployee).
+		then().
+			assertThat().statusCode(200).and().
+			assertThat().header("content-type", equalTo("text/html; charset=UTF-8")).
+		extract().
+			response();
+	}
+	
+	
 }

@@ -4,8 +4,8 @@ import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
 import com.google.gson.Gson;
-import com.restapitestingframework.requestjsons.CreateCustomerResponse;
 import com.restapitestingframework.requestpojos.CreateCutomerRequest;
+import com.restapitestingframework.responsepojos.CreateCustomerResponse;
 import com.restapitestingframework.testbase.Testbase;
 
 import io.restassured.response.Response;

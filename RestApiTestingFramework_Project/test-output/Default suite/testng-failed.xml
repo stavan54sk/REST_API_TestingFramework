@@ -3,11 +3,12 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.restapitestingframework.testscripts.CreateCutomerTests">
+      <class name="com.restapitestingframework.testscripts.UpdateCutomerTests">
         <methods>
-          <include name="createCustomerFirstTest" invocation-numbers="0"/>
+          <include name="updateCustomerTest" invocation-numbers="0 1"/>
+          <include name="createCustomerTest" invocation-numbers="0 1"/>
         </methods>
-      </class> <!-- com.restapitestingframework.testscripts.CreateCutomerTests -->
+      </class> <!-- com.restapitestingframework.testscripts.UpdateCutomerTests -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
