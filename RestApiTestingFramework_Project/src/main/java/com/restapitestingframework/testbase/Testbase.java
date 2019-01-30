@@ -13,11 +13,9 @@ import io.restassured.response.Response;
 */
 public class Testbase {
 
-	
-	
 	public Response createCustomer(String body) {
-		System.out.println(body);
-		System.out.println(RestApis.baseUri+RestApis.createEmployeeEndpoint);
+	//	System.out.println(body);
+	//	System.out.println(RestApis.baseUri+RestApis.createEmployeeEndpoint);
 		return  given().
 			contentType(ContentType.JSON).
 			body(body).
@@ -27,18 +25,17 @@ public class Testbase {
 			assertThat().statusCode(200).and().
 			assertThat().header("content-type", equalTo("text/html; charset=UTF-8")).
 		extract().
-			response();
-		
+				response();
+
 	}
 	
-	
-	
-	public Response updateCustomer(String body,String UpdatingEmployee) {
+		
+	public Response updateCustomer(String body,String updatingEmployee) {
 		return  given().
 			contentType(ContentType.JSON).
 			body(body).
 		when().
-			put(RestApis.baseUri+RestApis.updateEmployeeEndpoint+UpdatingEmployee).
+			put(RestApis.baseUri+RestApis.updateEmployeeEndpoint+updatingEmployee).
 		then().
 			assertThat().statusCode(200).and().
 			assertThat().header("content-type", equalTo("text/html; charset=UTF-8")).
@@ -46,5 +43,20 @@ public class Testbase {
 			response();
 	}
 	
+	
+	
+	public Response getCustomer(String gettingEmployee) {
+		System.out.println(gettingEmployee);
+		System.out.println(RestApis.baseUri+RestApis.getEmployeeEndpoint+gettingEmployee);
+		return  given().
+			contentType(ContentType.JSON).
+		when().
+			get(RestApis.baseUri+RestApis.getEmployeeEndpoint+gettingEmployee).
+		then().
+			assertThat().statusCode(200).and().
+			assertThat().header("content-type", equalTo("text/html; charset=UTF-8")).
+		extract().
+			response();
+	}
 	
 }

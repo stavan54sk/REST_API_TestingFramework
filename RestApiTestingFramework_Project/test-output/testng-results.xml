@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="4" passed="4">
+<testng-results skipped="0" failed="0" ignored="0" total="5" passed="5">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="7058" started-at="2019-01-27T10:44:39Z" finished-at="2019-01-27T10:44:46Z">
+  <suite name="Default suite" duration-ms="10633" started-at="2019-01-29T20:54:10Z" finished-at="2019-01-29T20:54:21Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="7058" started-at="2019-01-27T10:44:39Z" finished-at="2019-01-27T10:44:46Z">
-      <class name="com.restapitestingframework.testscripts.UpdateCutomerTests">
-        <test-method status="PASS" signature="createCustomerTest(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.restapitestingframework.testscripts.UpdateCutomerTests@cb5822]" name="createCustomerTest" duration-ms="3368" started-at="2019-01-27T10:44:39Z" data-provider="createCustomerTestDataProvider" finished-at="2019-01-27T10:44:42Z">
+    <test name="Default test" duration-ms="10633" started-at="2019-01-29T20:54:10Z" finished-at="2019-01-29T20:54:21Z">
+      <class name="com.restapitestingframework.testscripts.GetCutomerTests">
+        <test-method status="PASS" signature="createCustomerTest(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.restapitestingframework.testscripts.GetCutomerTests@cb5822]" name="createCustomerTest" duration-ms="3458" started-at="2019-01-29T20:54:10Z" data-provider="createCustomerTestDataProvider" finished-at="2019-01-29T20:54:14Z">
           <params>
             <param index="0">
               <value>
@@ -28,7 +28,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createCustomerTest -->
-        <test-method status="PASS" signature="createCustomerTest(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.restapitestingframework.testscripts.UpdateCutomerTests@cb5822]" name="createCustomerTest" duration-ms="1428" started-at="2019-01-27T10:44:42Z" data-provider="createCustomerTestDataProvider" finished-at="2019-01-27T10:44:44Z">
+        <test-method status="PASS" signature="createCustomerTest(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.restapitestingframework.testscripts.GetCutomerTests@cb5822]" name="createCustomerTest" duration-ms="1360" started-at="2019-01-29T20:54:14Z" data-provider="createCustomerTestDataProvider" finished-at="2019-01-29T20:54:15Z">
           <params>
             <param index="0">
               <value>
@@ -49,7 +49,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createCustomerTest -->
-        <test-method status="PASS" signature="updateCustomerTest(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.restapitestingframework.testscripts.UpdateCutomerTests@cb5822]" name="updateCustomerTest" duration-ms="999" started-at="2019-01-27T10:44:44Z" data-provider="updateCustomerTestDataProvider" finished-at="2019-01-27T10:44:45Z">
+        <test-method status="PASS" signature="updateCustomerTest(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.restapitestingframework.testscripts.GetCutomerTests@cb5822]" name="updateCustomerTest" duration-ms="1270" started-at="2019-01-29T20:54:15Z" data-provider="updateCustomerTestDataProvider" depends-on-methods="com.restapitestingframework.testscripts.GetCutomerTests.createCustomerTest" finished-at="2019-01-29T20:54:16Z">
           <params>
             <param index="0">
               <value>
@@ -70,7 +70,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- updateCustomerTest -->
-        <test-method status="PASS" signature="updateCustomerTest(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.restapitestingframework.testscripts.UpdateCutomerTests@cb5822]" name="updateCustomerTest" duration-ms="1165" started-at="2019-01-27T10:44:45Z" data-provider="updateCustomerTestDataProvider" finished-at="2019-01-27T10:44:46Z">
+        <test-method status="PASS" signature="updateCustomerTest(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.restapitestingframework.testscripts.GetCutomerTests@cb5822]" name="updateCustomerTest" duration-ms="1275" started-at="2019-01-29T20:54:17Z" data-provider="updateCustomerTestDataProvider" depends-on-methods="com.restapitestingframework.testscripts.GetCutomerTests.createCustomerTest" finished-at="2019-01-29T20:54:18Z">
           <params>
             <param index="0">
               <value>
@@ -91,7 +91,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- updateCustomerTest -->
-      </class> <!-- com.restapitestingframework.testscripts.UpdateCutomerTests -->
+        <test-method status="PASS" signature="getCustomerTest()[pri:0, instance:com.restapitestingframework.testscripts.GetCutomerTests@cb5822]" name="getCustomerTest" duration-ms="3188" started-at="2019-01-29T20:54:18Z" depends-on-methods="com.restapitestingframework.testscripts.GetCutomerTests.updateCustomerTest" finished-at="2019-01-29T20:54:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getCustomerTest -->
+      </class> <!-- com.restapitestingframework.testscripts.GetCutomerTests -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
