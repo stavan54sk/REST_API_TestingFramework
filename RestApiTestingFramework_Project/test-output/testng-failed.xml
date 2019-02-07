@@ -3,14 +3,16 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.restapitestingframework.testscripts.DeleteCustomer">
+      <class name="com.restapitestingframework.testscripts.CreateCutomerTests">
         <methods>
-          <include name="deleteCustomerTest"/>
-          <include name="createCustomerTest"/>
-          <include name="updateCustomerTest"/>
-          <include name="getCustomerTest"/>
+          <include name="beforeClass"/>
+          <include name="createCustomerFirstTest"/>
+          <include name="afterMethod"/>
+          <include name="afterSuite"/>
+          <include name="beforeSuite"/>
+          <include name="beforeMethod"/>
         </methods>
-      </class> <!-- com.restapitestingframework.testscripts.DeleteCustomer -->
+      </class> <!-- com.restapitestingframework.testscripts.CreateCutomerTests -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
