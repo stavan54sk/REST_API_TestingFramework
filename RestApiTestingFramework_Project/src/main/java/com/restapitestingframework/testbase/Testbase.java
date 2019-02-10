@@ -30,6 +30,8 @@ public class Testbase {
 	
 	public static ExtentReports extentReports;
 	public static ExtentTest extentTest;
+	public static ITestResult result;
+	
 
 	
 	@BeforeSuite
@@ -71,6 +73,7 @@ public class Testbase {
 	public Response createCustomer(String body) {
 		// System.out.println(body);
 		// System.out.println(RestApis.baseUri+RestApis.createEmployeeEndpoint);
+		extentTest.log(Status.INFO, " Customer Creation Call at EP: "+RestApis.baseUri + RestApis.createEmployeeEndpoint);
 		return given().contentType(ContentType.JSON).body(body).when()
 				.post(RestApis.baseUri + RestApis.createEmployeeEndpoint).then().assertThat().statusCode(200).and()
 				.assertThat().header("content-type", equalTo("text/html; charset=UTF-8")).extract().response();
@@ -78,6 +81,7 @@ public class Testbase {
 	}
 
 	public Response updateCustomer(String body, String updatingEmployee) {
+		extentTest.log(Status.INFO, " Customer Updation Call at EP: "+RestApis.baseUri + RestApis.updateEmployeeEndpoint + updatingEmployee);
 		return given().contentType(ContentType.JSON).body(body).when()
 				.put(RestApis.baseUri + RestApis.updateEmployeeEndpoint + updatingEmployee).then().assertThat()
 				.statusCode(200).and().assertThat().header("content-type", equalTo("text/html; charset=UTF-8"))
@@ -85,8 +89,9 @@ public class Testbase {
 	}
 
 	public Response getCustomer(String gettingEmployee) {
-		System.out.println(gettingEmployee);
+		
 		System.out.println(RestApis.baseUri + RestApis.getEmployeeEndpoint + gettingEmployee);
+		extentTest.log(Status.INFO, " Customer Updation Call at EP: "+RestApis.baseUri + RestApis.getEmployeeEndpoint + gettingEmployee);
 		return given().contentType(ContentType.JSON).when()
 				.get(RestApis.baseUri + RestApis.getEmployeeEndpoint + gettingEmployee).then().assertThat()
 				.statusCode(200).and().assertThat().header("content-type", equalTo("text/html; charset=UTF-8"))
