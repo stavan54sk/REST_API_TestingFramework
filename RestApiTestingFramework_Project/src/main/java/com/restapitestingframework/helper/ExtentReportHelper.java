@@ -6,7 +6,11 @@ import java.util.Date;
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.reporter.ExtentHtmlReporter;
 import com.aventstack.extentreports.reporter.configuration.Theme;
-
+/**
+@author Stavan S. Kodolikar
+*
+*
+*/
 public class ExtentReportHelper {
 
 	 static ExtentReports extentReports;
